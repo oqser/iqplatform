@@ -8,11 +8,9 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+    <AppUsers />
+  </React.StrictMode>
+
 )
 
-ReactDOM.createRoot(document.getElementById('users-list')!).render(
-    <React.StrictMode>
-        <AppUsers />
-    </React.StrictMode>,
-)
+// ReactDOM.createRoot(document.getElementById('users-list')!).render(<AppUsers />)
