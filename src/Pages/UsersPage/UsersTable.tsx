@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { DataGrid } from '@mui/x-data-grid';
 
-const DataTable = ({
+const UsersTable = ({
     rows,
     columns,
     loading,
@@ -23,4 +23,4 @@ const DataTable = ({
     );
 };
 
-export default DataTable
+export default UsersTable;

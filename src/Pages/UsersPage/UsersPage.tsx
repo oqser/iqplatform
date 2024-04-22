@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import DataTable from "./DataTable.tsx";
+import UsersTable from "./UsersTable.tsx";
 
 
 const columns = [
@@ -13,18 +13,18 @@ const userTableStyles = {
     height: '631px'
 }
 
-const UserTable = () => {
+const UsersPage = () => {
     const[users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then((json) => setUsers(json));
-    },
-    []);
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(response => response.json())
+                .then((json) => setUsers(json));
+        },
+        []);
 
     return (
-        <DataTable
+        <UsersTable
             rows={users}
             columns={columns}
             loading={!users.length}
@@ -33,4 +33,4 @@ const UserTable = () => {
     )
 }
 
-export default UserTable
+export default UsersPage

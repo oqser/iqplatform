@@ -2,14 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import UserTable from "./UserTable.tsx";
+import { BrowserRouter } from 'react-router-dom'
+import HomePage  from "./Pages/HomePage/HomePage.tsx";
+import UsersPage from "./Pages/UsersPage/UsersPage.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
     <App />
-    <UserTable />
-  </React.StrictMode>
-
 )
 
 // ReactDOM.createRoot(document.getElementById('users-list')!).render(<AppUsers />)
